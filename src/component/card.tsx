@@ -52,12 +52,12 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative drop-shadow-xl h-72 max-w-xl w-full min-w-[36rem] overflow-hidden rounded-xl bg-gray-800 hover:scale-105 transition-transform duration-300 ease-in-out ${className}`}
+      className={`relative drop-shadow-xl h-auto w-full max-w-xl overflow-hidden rounded-xl bg-gray-800 hover:scale-105 transition-transform duration-300 ease-in-out ${className}`}
     >
-      <div className="bg-gray-700 text-gray-200 p-6 rounded-lg absolute z-10 opacity-90 inset-0.5">
-        <div className="flex justify-between items-center">
+      <div className="bg-gray-700 text-gray-200 p-6 rounded-lg relative z-10 opacity-90">
+        <div className="flex flex-wrap md:flex-nowrap justify-between items-center">
           <div className="space-y-4 flex-grow">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div className="w-16 h-16 rounded-full overflow-hidden">
                 <img
                   src={avatarUrl || "/api/placeholder/64/64"}
@@ -65,20 +65,20 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div>
-                <h2 className="text-cyan-500 text-xl font-semibold">
+              <div className="text-center sm:text-left">
+                <h2 className="text-cyan-500 text-lg sm:text-xl font-semibold">
                   {name}{company ? ` @ ${company}` : ''}
                 </h2>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm sm:text-base">
                   {role}
                 </p>
-                <p className="text-sm text-gray-500 mt-1">
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">
                   Data since {startDate}
                 </p>
               </div>
             </div>
 
-            <table className="w-full text-left">
+            <table className="w-full text-left text-sm sm:text-base">
               <tbody>
                 <tr>
                   <td className="py-1 pr-4 text-neutral-100">
@@ -108,8 +108,8 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             </table>
           </div>
 
-          <div className="flex flex-col items-center justify-center space-y-4 ml-4">
-            <div className="relative w-32 h-32">
+          <div className="flex flex-col items-center justify-center space-y-4 mt-4 md:mt-0 md:ml-4 w-full md:w-fit">
+            <div className="relative w-24 h-24 sm:w-32 sm:h-32">
               <div className="absolute inset-0 rounded-full border-4 border-gray-600" />
               <div
                 className="absolute inset-0 rounded-full border-4 border-cyan-500"
@@ -138,7 +138,6 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="absolute w-56 h-48 bg-gray-200 blur-[50px] animate-border-move"></div>
     </div>
   );
 };
