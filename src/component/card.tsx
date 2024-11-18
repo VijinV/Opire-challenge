@@ -54,7 +54,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
     <div
       className={`relative drop-shadow-xl h-72 max-w-xl w-full min-w-[36rem] overflow-hidden rounded-xl bg-gray-800 hover:scale-105 transition-transform duration-300 ease-in-out ${className}`}
     >
-      <div className="bg-gray-700 text-gray-200 p-6 rounded-lg absolute z-10 opacity-90 inset-0.5Hey, Cortana. ">
+      <div className="bg-gray-700 text-gray-200 p-6 rounded-lg absolute z-10 opacity-90 inset-0.5">
         <div className="flex flex-wrap md:flex-nowrap justify-between items-center">
           <div className="space-y-4 flex-grow">
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
