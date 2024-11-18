@@ -79,7 +79,11 @@ A visually appealing and modern developer statistics card built using **React**,
   ```bash
   npm run build:all
   ```
-
 ## 🌐 Live Demo
 
-Check out the live demo: [https://opire-challenge.vercel.app](#)
+Check out the live demo: https://opire-challenge.vercel.app
+
+<!-- Alternative markdown format: -->
+<!-- ## 🌐 Live Demo
+
+Check out the live demo: [Live Demo](https://opire-challenge.vercel.app) -->

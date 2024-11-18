@@ -1,9 +1,9 @@
 import React from 'react';
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, X } from "lucide-react";
 
 // Social icon component
 interface SocialIconProps {
-  platform: 'github' | 'linkedin' | 'twitter';
+  platform: 'github' | 'linkedin' | 'x';
 }
 
 const SocialIcon: React.FC<SocialIconProps> = ({ platform }) => {
@@ -12,8 +12,8 @@ const SocialIcon: React.FC<SocialIconProps> = ({ platform }) => {
       return <Github className="w-6 h-6" />;
     case 'linkedin':
       return <Linkedin className="w-6 h-6" />;
-    case 'twitter':
-      return <Twitter className="w-6 h-6" />;
+    case 'x':
+      return <X className="w-6 h-6" />;
     default:
       return null;
   }
@@ -34,7 +34,7 @@ export interface ProfileCardProps {
   avatarUrl?: string;
   stats?: ProfileStats;
   socialLinks: {
-    platform: 'github' | 'linkedin' | 'twitter';
+    platform: 'github' | 'linkedin' | 'x';
     url: string;
   }[];
   className?: string;

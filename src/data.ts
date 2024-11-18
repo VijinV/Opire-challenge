@@ -13,8 +13,8 @@ export const sampleProfile: ProfileCardProps = {
       contributedRepos: 5
     },
     socialLinks: [
-      { platform: 'github', url: 'https://github.com/username' },
-      { platform: 'linkedin', url: 'https://linkedin.com/in/username' },
-      { platform: 'twitter', url: 'https://twitter.com/username' }
+      { platform: 'github', url: 'https://github.com/VijinV' },
+      { platform: 'linkedin', url: 'https://www.linkedin.com/in/vijinvinod' },
+      { platform: 'x', url: 'https://x.com/vijinvinod_dev' }
     ]
   };
