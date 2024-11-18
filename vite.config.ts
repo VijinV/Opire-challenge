@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => {
         plugins: [react(), ...(isEmbedBuild ? [injectCSS()] : [])],
         css: isEmbedBuild
             ? {
-                  postcss: './postcss.config.js', // Use PostCSS for Tailwind
+                  postcss: './postcss.config.js',
               }
             : undefined,
         build: {
@@ -37,13 +37,7 @@ export default defineConfig(({ mode }) => {
                 : undefined,
             rollupOptions: isEmbedBuild
                 ? {
-                      external: ['react', 'react-dom'],
-                      output: {
-                          globals: {
-                              react: 'React',
-                              'react-dom': 'ReactDOM',
-                          },
-                      },
+                      external: [],
                       plugins: [
                           inject({
                               process: 'process/browser',
