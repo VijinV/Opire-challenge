@@ -20,9 +20,9 @@ const SocialIcon: React.FC<SocialIconProps> = ({ platform }) => {
 };
 
 interface ProfileStats {
-  totalCommits?: number;
-  createdPRs?: number;
-  reviewedPRs?: number;
+      issueResolved?: number;
+      moneyEarned?: number;
+      challengesWon?: number;
   contributedRepos?: number;
 }
 
@@ -82,21 +82,21 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
               <tbody>
                 <tr>
                   <td className="py-1 pr-4 text-neutral-100">
-                    Total commits:
+                    Issue Resolved:
                   </td>
-                  <td className="py-1 font-mono">{stats?.totalCommits}</td>
+                  <td className="py-1 font-mono">{stats?.issueResolved}</td>
                 </tr>
                 <tr>
                   <td className="py-1 pr-4 text-neutral-100">
-                    Created PRs:
+                    Money Earned:
                   </td>
-                  <td className="py-1 font-mono">{stats?.createdPRs}</td>
+                  <td className="py-1 font-mono">${stats?.moneyEarned}</td>
                 </tr>
                 <tr>
                   <td className="py-1 pr-4 text-neutral-100">
-                    Reviewed PRs:
+                  Challenges Won:
                   </td>
-                  <td className="py-1 font-mono">{stats?.reviewedPRs}</td>
+                  <td className="py-1 font-mono">{stats?.challengesWon}</td>
                 </tr>
                 <tr>
                   <td className="py-1 pr-4 text-neutral-100">
