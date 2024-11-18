@@ -16,7 +16,7 @@ function renderCard(targetId: string) {
 
 // Automatically render the card in the div with id="profile" if present
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultTargetId = 'profile';
+    const defaultTargetId = 'opire-dev-card';
     const defaultTarget = document.getElementById(defaultTargetId);
     if (defaultTarget) {
         renderCard(defaultTargetId);

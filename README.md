@@ -1,51 +1,85 @@
-# React + TypeScript + Vite
+# Opire Dev Card 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually appealing and modern developer statistics card built using **React**, **TypeScript**, and **Tailwind**. This card showcases key statistics for Opire developers, including GitHub metsurics such as resolved ises, earnings, and achievements. Perfect for embedding in your website or sharing your developer stats seamlessly.
 
-Currently, two official plugins are available:
+![https://opire-challenge.vercel.app]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎨 **Visually Appealing**: Clean, modern design with animations and a cohesive color palette
+- 📊 **Developer Metrics**: Display your avatar, issues resolved, earnings, and other key stats
+- 📱 **Responsive**: Fully responsive design that works seamlessly across all screen sizes
+- 🔗 **Embeddable**: Easy to share by embedding into any website or social media platform
+- 🛠️ **Built with Mantine**: Styled and componentized using Mantine library for consistency
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default tseslint.config({Hey, Cortana. 
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/VijinV/Opire-challenge
+   cd Opire-challenge
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 🔌 Embedding the Card
+
+### Quick Start
+
+1. Add the script to your HTML:
+   ```html
+   <script src="https://opire-challenge.vercel.app/embed/script.umd.cjs"></script>
+   ```
+
+2. Add a container div:
+   ```html
+   <div id="opire-dev-card"></div>
+   ```
+
+### Complete Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Opire Dev Card</title>
+    <script src="https://opire-challenge.vercel.app/embed/script.umd.cjs"></script>
+</head>
+<body>
+    <div id="opire-dev-card"></div>
+</body>
+</html>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Available Scripts
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Build the React App**:
+  ```bash
+  npm run build
+  ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Opire-challenge
+- **Build the Embed Script**:
+  ```bash
+  npm run build:embed
+  ```
+
+- **Build Both**:
+  ```bash
+  npm run build:all
+  ```
+
+## 🌐 Live Demo
+
+Check out the live demo: [https://opire-challenge.vercel.app](#)
