@@ -6,11 +6,10 @@ A visually appealing and modern developer statistics card built using **React**,
 
 ## ✨ Features
 
-- 🎨 **Visually Appealing**: Clean, modern design with animations and a cohesive color palette
+- 🎨 **Visually Appealing**: Clean, modern design with animations
 - 📊 **Developer Metrics**: Display your avatar, issues resolved, earnings, and other key stats
 - 📱 **Responsive**: Fully responsive design that works seamlessly across all screen sizes
 - 🔗 **Embeddable**: Easy to share by embedding into any website or social media platform
-- 🛠️ **Built with Mantine**: Styled and componentized using Mantine library for consistency
 
 ## 🚀 Getting Started
 
