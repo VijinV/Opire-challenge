@@ -50,9 +50,10 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   socialLinks,
   className = '',
 }) => {
+    
   return (
     <div
-      className={`relative drop-shadow-xl h-72 max-w-xl w-full min-w-[36rem] overflow-hidden rounded-xl bg-gray-800 hover:scale-105 transition-transform duration-300 ease-in-out ${className}`}
+      className={`relative drop-shadow-xl h-auto md:min-h-72 min-h-[30rem] w-full max-w-xl md:min-w-[36rem] min-w-96 overflow-hidden rounded-xl bg-gray-800 hover:scale-105 transition-transform duration-300 ease-in-out ${className}`}
     >
       <div className="bg-gray-700 text-gray-200 p-6 rounded-lg absolute z-10 opacity-90 inset-0.5">
         <div className="flex flex-wrap md:flex-nowrap justify-between items-center">
