@@ -6,7 +6,7 @@ import { sampleProfile } from "./data";
 
 
 export default function App() {
-    const [isDarkMode, setIsDarkMode ] = useState(false);
+    const [isDarkMode, setIsDarkMode ] = useState(true);
     useEffect(()=>{
         const html = document.documentElement;
         isDarkMode ? html.classList.add('dark') : html.classList.remove('dark');
